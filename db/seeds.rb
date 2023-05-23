@@ -1,0 +1,13 @@
+Hero.create!(name: "Capitão América", attack: 83, defense: 88, life: 500, team: 0)
+Hero.create!(name: "Soldado Invernal", attack: 75, defense: 100, life: 500, team: 0)
+Hero.create!(name: "Gavião Arqueiro", attack: 88, defense: 77, life: 500, team: 0)
+Hero.create!(name: "Feiticeira Escarlate", attack: 93, defense: 77, life: 500, team: 0)
+Hero.create!(name: "Falcão", attack: 80, defense: 82, life: 500, team: 0)
+Hero.create!(name: "Hulk", attack: 100, defense: 70, life: 500, team: 0)
+
+Hero.create!(name: "Homem de Ferro", attack: 75, defense: 100, life: 500, team: 1)
+Hero.create!(name: "Pantera Negra", attack: 86, defense: 93, life: 500, team: 1)
+Hero.create!(name: "Viúva Negra", attack: 88, defense: 77, life: 500, team: 1)
+Hero.create!(name: "Visão", attack: 100, defense: 70, life: 500, team: 1)
+Hero.create!(name: "Máquina de Combate", attack: 75, defense: 100, life: 500, team: 1)
+Hero.create!(name: "Homem-Aranha", attack: 80, defense: 82, life: 500, team: 1)
