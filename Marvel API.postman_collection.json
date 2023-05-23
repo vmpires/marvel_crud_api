@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "b7932abf-4ae3-4b37-8fe1-ddfab41aec81",
+		"name": "Marvel API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15407554"
+	},
+	"item": [
+		{
+			"name": "CRUD API - GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/heroes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heroes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD API - GET ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/heroes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heroes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD API - CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Thor\",\n    \"attack\": 100,\n    \"defense\": 5,\n    \"life\": 500,\n    // 0 for \"con_registry\" and 1 for \"pro_registry\" (these string values can also be used)\n    \"team\": \"pro_registry\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/heroes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heroes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD API - UPDATE",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Drax\",\n    \"attack\": 95,\n    \"defense\": 80,\n    \"life\": 500,\n    // 0 for \"con_registry\" and 1 for \"pro_registry\" (these string values can also be used)\n    \"team\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/heroes/13",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heroes",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD API - DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/heroes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heroes",
+						"1"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BATTLE SIMULATOR API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/heroes/battle?hero1=6&hero2=10",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heroes",
+						"battle"
+					],
+					"query": [
+						{
+							"key": "hero1",
+							"value": "6"
+						},
+						{
+							"key": "hero2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
